@@ -66,25 +66,24 @@
 	
 </head>
     
-		<body class="is-loading">
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in overlay">
+    <div id="wrapper" class="fade-in">
         <!-- Intro 头部显示 s -->
-                <div id="intro">
-            <h1>This is<br>
-                        Missing Edge </h1>
-            <p> A boy who is fond of <br> Seal Cryptocurrency Dota Photoshop & Insect 
-            </p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">EOS</a>
 </header>
-        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special">
             <ul class="menu links">
@@ -163,56 +162,70 @@
                     
 			</ul>
 </nav>
-        <!-- Nav 导航条 end -->
-        <!-- Main 主要部分 start -->
-        
-        <!-- 文章列表   s -->
-        <div id="main" style="background-color: transparent; padding:0;">
-        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
-            <div class="link_row">
-                <!-- 文章sample  s-->
 
-                
-                <div class="6u 12u(narrower)">
-                    <section class="link_box special">
-                       <a href="/2018/05/27/investment/">
-                        <div class="page_title" style="background-image: url(https://i.loli.net/2019/01/26/5c4bc9ba491be.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
-                            <!--标题-->
-                            <h2 class="page_title_text"> 简论投资（机）的盲目性 </h2>
-                            <!--段落-->
-                        </div>
-                        </a>
-                        <div class="home-post-info">
-                            <!-- Author Avatar -->
-                            <div class="home-post-info-author-avatar">
-                                <h6><span class="home-post-info-data">2018-05-27</span></h6>
-                                <div class="home-post-info-Category">
-                                    <!-- Category -->
-                                    <span>
-                            <h6>
-                            <a class="post_category-link" href="http://localhost:4000/categories/Algorithm/">
-                                <a class="post_category-link" href="/categories/数字货币/">数字货币</a></a>
-                            </h6>
-                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- 文章sample  e-->
-            
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://i.loli.net/2019/01/29/5c5010d73ddda.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>Hexo更新博客后出现404</h2></a>
             </div>
-        </section>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在更新上传了一篇新博客后，本地运行<a href="http://localhost:4001正常，而连接到Github仓库便爆出404错误。" target="_blank" rel="noopener">http://localhost:4001正常，而连接到Github仓库便爆出404错误。</a></p>
+<h6 id="更新博客后，依次执行："><a href="#更新博客后，依次执行：" class="headerlink" title="更新博客后，依次执行："></a>更新博客后，依次执行：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h6 id="编译器运行结果如下："><a href="#编译器运行结果如下：" class="headerlink" title="编译器运行结果如下："></a>编译器运行结果如下：</h6><p><img src="https://i.loli.net/2019/01/29/5c501394b1ad5.png" alt="1"><br>运行正常，未发生任何FATAL ERROR</p>
+<h6 id="http-localhost-4001运行结果如下："><a href="#http-localhost-4001运行结果如下：" class="headerlink" title="http://localhost:4001运行结果如下："></a><a href="http://localhost:4001运行结果如下：" target="_blank" rel="noopener">http://localhost:4001运行结果如下：</a></h6><p><img src="https://i.loli.net/2019/01/29/5c5013af25e4f.png" alt="2"></p>
+<h6 id="浏览器运行报错，出现404："><a href="#浏览器运行报错，出现404：" class="headerlink" title="浏览器运行报错，出现404："></a>浏览器运行报错，出现404：</h6><p><img src="https://i.loli.net/2019/01/29/5c5013cab32aa.png" alt="3"></p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><ul>
+<li><p>方案一（本人）<br>我申请了个人域名（<a href="eosdota.xyz">eosdota.xyz</a>），并将其替换了大长串的Github域名（<a href="eos1o.github.io">eos1o.github.io</a>），所以本解决方法适用于已经更换成个人域名的小伙伴，方法如下：</p>
+<ul>
+<li>执行 <code>hexo g -d</code> ,</li>
+<li>登陆Github官网</li>
+<li>打开项目仓库</li>
+<li>进入Settings设置</li>
+<li>将页面倒数第二目录<code>Github Page</code>中的<code>Custom domain</code>设置为个人域名并保存</li>
+</ul>
+</li>
+</ul>
+<p>恭喜，此时在浏览器中便可以打开博客了了！</p>
+<ul>
+<li><p>方案二（网上）<br>有些小伙伴之所以产生404错误，一个可能的原因是仓库名与<code>_condig.yml</code>中的设置存在出入，解决办法如下：<br>更改(rename)仓库名，使之与你的的github的登陆链接（例如，我的为<a href="eos1o.github.io">eos1o.github.io</a>）相一致。<br><img src="https://i.loli.net/2019/01/29/5c501a280e48e.png" alt="5"><br><img src="https://i.loli.net/2019/01/29/5c50192d57408.jpg" alt="4"></p>
+</li>
+<li><p>方案三（网上）<br>还一个可能产生404的原因便是因为缺少了<code>index.html</code>文件，解决方案如下：<br>在git bash中敲入<br><code>npm install hexo-generator-index --save</code><br>之后便有<code>index.html</code>文件了。不妨重新<code>hexo clean</code>，<code>hexo g -d</code>试试。</p>
+</li>
+</ul>
+<p>第一次写博客，还有些生涩，希望可以帮到大家。有问题可直接评论，我会不定期登录博客，和大家一起探讨。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 valine -->
+<div id="comment">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#comment' ,
+        notify: false,
+        verify: false,
+        app_id: '5Q65s9sF1llg3gjjDz7BTURB-gzGzoHsz',
+        app_key: 'F8659vNaRzPLVxOEYfovUahv',
+        placeholder: 'ヾﾉ≧∀≦)o 来呀！快活呀！~',
+        pageSize: '10',
+        avatar: 'wavatar',
+        avatar_cdn: ''
+    });
+</script>
+</div>
+<style>
+   #comment{
+        padding: 2pc;
+    }
+</style>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=28308561&auto=0&height=32"></iframe>
+
+
         </div>
-        <!-- 文章列表   end -->
-        <!-- Main 主要部分 end -->
-        <!-- footer  页码 start-->
-        <footer style="text-align: center; padding-top: 2em;">
-  
-</footer>
-
-
-        <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -223,11 +236,10 @@
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
         </div>
-        <!-- Copyright 版权 end -->
     </div>
-    <!-- Wrapper 外包 e-->
-    <!-- Scripts -->
 </body>
+
+
 
  	
 </html>
